@@ -1,0 +1,232 @@
+.header{
+    background-image: url(../image/banner-bg.jpg);
+    padding: 60px;
+    background-size: cover;     /* ảnh phủ kín khung */
+
+  background-repeat: no-repeat; /* không lặp */
+ position: relative;
+    
+}
+.header-main{
+    position:sticky;
+}
+.header .inner-wrap{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .inner-menu ul{
+     list-style-type: none;
+    display: flex;
+     margin: 0;
+    padding: 0;
+    align-items: center;
+}
+header .inner-menu ul li a{
+    padding: 15px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+header .inner-logo img{
+    cursor: pointer;
+
+}
+header .inner-menu ul li a:hover{
+    color: var(--color-two);
+
+}
+.header .header-main {
+    background-color: white;
+    padding: 30px;
+    border-radius: 50px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header .inner-content{
+    margin-top: 100px;
+    text-align: center;
+     margin-left: 170px;
+    margin-right: 30px;
+    width: 800px;
+
+}
+.header .inner-content .inner-title{
+    font-size: 50px;
+    color: white;
+    padding: 40px 0px;
+}
+
+.header .inner-content .inner-desc{
+    font-size: 20px;
+    color: white;
+    padding: 60px 0px;
+    
+}
+
+.header .section-one .btn-cl{
+    background-color: var(--color-two);
+    border-radius: 15px;
+}
+
+.header .section-one .inner-box{
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px;
+    
+}
+.header .section-one .inner-box .inner-icon i {
+    color: white;
+    font-size: 50px;
+    z-index: 1;
+}
+.header .section-one .inner-box .inner-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color-one);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+   
+}
+.section-one .inner-box .inner-title{
+    margin: 0;
+    padding: 0;
+   margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 18px;
+}
+ .section-one .inner-box .inner-desc{
+   margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 15px;
+      color: var(--color-text);
+}
+
+ .section-one .inner-box {
+   background-color: white;
+   height: 90%;
+  
+   cursor: pointer;
+}
+ .section-one {
+  margin-top: 200px;
+}
+
+.section-one .inner-box:hover .inner-icon {
+  background-color: var(--color-two);
+}
+
+
+.section-two .inner-main .inner-title{
+ margin: 0;
+ margin-bottom: 40px;
+font-weight: 400;
+
+}
+.section-two .inner-main .inner-desc{
+ font-size: 17px;
+ color: var(--color-text);
+ margin-bottom: 20px;
+}
+
+.section-two .inner-img {
+  padding: 20px;
+}
+
+/* section-three */
+.section-three{
+    margin-top: 100px;
+}
+
+
+.section-three .inner-main .inner-title{
+ margin: 0;
+ margin-bottom: 40px;
+font-weight: 400;
+
+}
+.section-three .inner-main .inner-desc{
+ font-size: 17px;
+ color: var(--color-text);
+ margin-bottom: 20px;
+}
+
+.section-three .inner-img {
+  padding: 20px;
+}
+
+/* endsection-three */
+
+/* section-four */
+.section-four{
+    margin-top: 60px;
+    background-image: url(../image/bg-2.jpg);
+    padding: 40px;
+
+}
+.section-four .inner-content {
+  padding: 23px;    
+  text-align: center;
+
+
+}
+.section-four .inner-content .inner-title{
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+
+
+}
+
+.section-four .inner-content .inner-desc{
+ 
+  color: white;
+  font-size: 15px;
+}
+.section-four .inner-box {
+display: flex;
+}
+.section-four .inner-box .inner-item{
+ 
+ text-align: center;
+ background-color: white;
+ margin-left: 20px;
+ padding: 20px;
+ border-radius: 20px;
+box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+}
+
+.section-four .inner-box .inner-item i{
+ color: var(--color-one);
+ font-size: 30px;
+ 
+}
+
+.section-four .inner-box .inner-item i{
+ color: var(--color-one);
+ font-size: 30px;
+ 
+}
+
+.section-four .inner-box .inner-item .box-title{
+ font-size: 25px;
+ font-weight: 300;
+ margin-top: 15px;
+ margin-bottom: 30px;
+ 
+}
+
+.section-four .inner-box .inner-item .box-desc{
+ color: var(--color-text);
+ 
+}
+/* end section-four */
