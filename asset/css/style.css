@@ -1,14 +1,17 @@
 .header{
     background-image: url(../image/banner-bg.jpg);
     padding: 60px;
-    background-size: cover;     /* ảnh phủ kín khung */
+    background-size: cover;     
 
-  background-repeat: no-repeat; /* không lặp */
+  background-repeat: no-repeat; 
  position: relative;
     
 }
-.header-main{
-    position:sticky;
+.header .header-main{
+
+    position: sticky;
+    top: 20px;
+    z-index: 1000; 
 }
 .header .inner-wrap{
     display: flex;
@@ -82,7 +85,7 @@ header .inner-menu ul li a:hover{
 .header .section-one .inner-box .inner-icon i {
     color: white;
     font-size: 50px;
-    z-index: 1;
+
 }
 .header .section-one .inner-box .inner-icon {
     width: 100px;
@@ -92,9 +95,7 @@ header .inner-menu ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 80px;
-    margin-right: 100px;
-    margin-bottom: 20px;
+      margin: 0 auto 20px;   /* thêm dòng này để icon ra giữa */
    
 }
 .section-one .inner-box .inner-title{
@@ -193,16 +194,25 @@ font-weight: 400;
   font-size: 15px;
 }
 .section-four .inner-box {
+
+
 display: flex;
+flex-wrap: wrap;
+
 }
 .section-four .inner-box .inner-item{
  
  text-align: center;
  background-color: white;
- margin-left: 20px;
+ margin-left: 30px;
  padding: 20px;
  border-radius: 20px;
-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+ transform: translateY(0);
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  margin-bottom: 30px;
 }
 
 .section-four .inner-box .inner-item i{
@@ -229,4 +239,92 @@ box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
  color: var(--color-text);
  
 }
+
+.section-four .inner-box .inner-item:hover{
+  cursor: pointer;
+  transform: translateY(-10px); /* dịch lên 15px */
+}
+
+.section-four .inner-box .inner-item::before{
+content:"";
+ background-color:white;   
+ position: absolute;
+ width: 100%;
+ height:100%;
+border-radius: 20px;
+top: 15px;
+left: 15px;
+opacity: 0.3;
+z-index: -1;
+}
 /* end section-four */
+
+/* setion-five */
+.section-five{
+    margin-top: 40px;
+    padding: 100px 0;
+   background-color: white;
+}
+.section-five  .inner-title{
+
+    font-weight: 400;
+font-size: 40px;
+
+}
+.section-five  .inner-head{
+
+   text-align: center;
+
+}
+
+.section-five  .inner-desc{
+max-width: 700px;
+margin: 0 auto;
+    margin-top: 30px;
+    font-size: 20px;
+    color: var(--color-text);
+}
+.section-five .inner-wrap{
+   margin-top: 30px;
+   
+}
+.section-five .inner-box{
+    padding:40px 20px ;
+    border-radius: 10px;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+    background-color: white;
+   
+
+}
+
+.section-five .inner-wrap .inner-content{
+   margin-top: 30px;
+   margin-bottom: 30px;
+   font-size: 18px;
+   color: var(--color-text);
+
+}
+.section-five .inner-icon{
+   text-align: center;
+}
+.section-five .inner-icon i{
+   color: var(--color-one);
+   font-size: 30px;
+}
+.section-five .name-job{
+text-align: center;
+}
+.section-five .name-job .inner-name{
+font-size: 20px;
+font-weight: 300;
+margin: 0;
+}
+
+.section-five .name-job .inner-job{
+font-size: 17px;
+font-weight: 300;
+margin: 0;
+color: var(--color-two);
+}
+
+/* end-setion-five */
