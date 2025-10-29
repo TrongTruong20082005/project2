@@ -13,8 +13,13 @@
 
 body{
     font-family: var(--font);
+    overflow-x: hidden; 
 }
 a{
     text-decoration: none;
+    
 }
 
+html{
+    overflow-x: hidden;
+}
